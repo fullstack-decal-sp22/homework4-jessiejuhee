@@ -1,12 +1,24 @@
 import React from "react";
-import './styles/Square.css';
+//import './styles/Square.css';
 
-function Square() {
+const Square = ({value, onClick}) => {
+    const style = value ? `squares ${value}` : `squares`;
     return (
-        <button className="square">
-            {/* TODO */}
+        <button className={style} onClick={onClick}>
+            {value}
         </button>
     )
 }
 
 export default Square;
+
+/*function Square() {
+    return (
+        <button className="square">
+            
+        </button>
+    )
+}
+
+export default Square;*/
+
